@@ -129,8 +129,9 @@ local config = {
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
-    virtual_text = true,
+    virtual_text = false,
     underline = true,
+    update_in_insert = true,
   },
 
   -- Extend LSP configuration
@@ -237,14 +238,13 @@ local config = {
       --     require("lsp_signature").setup()
       --   end,
       -- },
-      {"BurntSushi/ripgrep"},
-
       {"easymotion/vim-easymotion"},
       {"tpope/vim-surround"},
 
       -- Themes
       {"markvincze/panda-vim"},
     },
+
     -- All other entries override the require("<key>").setup({...}) call for default plugins
     ["null-ls"] = function(config) -- overrides `require("null-ls").setup(config)`
       -- config variable is the default configuration table for the setup function call
