@@ -239,8 +239,6 @@ local config = {
       --     require("lsp_signature").setup()
       --   end,
       -- },
-      {"BurntSushi/ripgrep"},
-
       {"easymotion/vim-easymotion"},
       {"tpope/vim-surround"},
 
